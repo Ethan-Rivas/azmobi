@@ -1,0 +1,17 @@
+<div>
+  <h4>Información de App</h4>
+  <ul>
+    <li>
+      <b>ID:</b> {{app.id}}
+    </li>
+    <li>
+      <b>Nombre:</b> {{app.name}}
+    </li>
+    <li>
+      <b>Creado:</b> {{app.created_at | date :'short'}}
+    </li>
+    <li>
+      <b>Ult. Actualización:</b> {{app.updated_at | date :'short'}}
+    </li>
+  </ul>
+</div>

@@ -14,3 +14,8 @@ export const environment = {
  * on performance if an error is thrown.
  */
 // import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+
+// APP_ID (UserAppMobile Identifier backend)
+export const APP_ID = 15;
+// API
+export const API = 'http://localhost:8000/api/v1/';
