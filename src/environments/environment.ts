@@ -18,6 +18,6 @@ export const environment = {
 // APP_ID (UserAppMobile Identifier backend)
 
 export const app = {
-  ID: 1,
-  API: 'http://localhost:8000/api/v1/',
+  ID: 2,
+  API: 'http://miapp.devminds.io/backend/api/v1/',
 };

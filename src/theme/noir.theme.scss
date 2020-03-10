@@ -34,10 +34,14 @@
       }
 
       ion-icon {
-        color: white;
+        color: white !important;
         padding: 15px;
         font-size: 20px;
         cursor: pointer;
+      }
+
+      svg.ionicon.s-ion-icon {
+        color: white !important;
       }
     }
 
