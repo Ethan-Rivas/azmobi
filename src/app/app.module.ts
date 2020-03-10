@@ -12,6 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppInfoComponent } from './app-info/app-info.component';
+import { AppState } from './injectors/app-state.injector';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { AppInfoComponent } from './app-info/app-info.component';
   providers: [
     StatusBar,
     SplashScreen,
+    AppState,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]

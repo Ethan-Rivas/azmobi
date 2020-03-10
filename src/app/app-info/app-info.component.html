@@ -8,10 +8,21 @@
       <b>Nombre:</b> {{app.name}}
     </li>
     <li>
+      <b>Tema:</b> {{app.theme.title}}
+    </li>
+    <li>
       <b>Creado:</b> {{app.created_at | date :'short'}}
     </li>
     <li>
       <b>Ult. Actualización:</b> {{app.updated_at | date :'short'}}
+    </li>
+    <li>
+      <b>Páginas:</b>
+      <ul>
+        <li *ngFor="let page of app.pages">
+          <b>{{page.id}}.-</b> {{page.title}}
+        </li>
+      </ul>
     </li>
   </ul>
 </div>

@@ -24,3 +24,18 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+/* Custom CSS Themes */
+@import './src/theme/red.theme';
+@import './src/theme/noir.theme';
+
+.inner-scroll.sc-ion-content-md {
+  padding-top: unset !important;
+  padding-bottom: unset !important;
+}
+
+ion-menu.md ion-item {
+  --padding-start: unset !important;
+  --padding-end: unset !important;
+  border-radius:unset !important;
+}

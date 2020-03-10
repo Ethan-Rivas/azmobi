@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
-import { environment, APP_ID, API } from '../../environments/environment';
+import { environment, app } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -12,13 +12,28 @@ export class ApiService {
     private http: HttpClient
   ) { }
 
+  // Get App
   getApp() {
     return new Promise(resolve => {
-      this.http.get(API + 'apps/' + APP_ID)
+      this.http.get(app.API + 'apps/' + app.ID)
         .subscribe(response => {
           //console.log(response);
 
-          resolve(JSON.parse(JSON.stringify(response)).data);
+          resolve(response);
+         }, error => {
+          console.log(error);
+        });
+    });
+  }
+
+  // Get Page
+  getPage(page_id) {
+    return new Promise(resolve => {
+      this.http.get(app.API + 'pages/' + page_id)
+        .subscribe(response => {
+          //console.log(response);
+
+          resolve(response);
          }, error => {
           console.log(error);
         });
